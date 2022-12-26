@@ -1,0 +1,10 @@
+ * { 
+ box-sizing: border-box;
+}
+/*properties*/
+:root {
+  --bgcolor: #EFF5F5;
+  --fontlogo: "Passions Conflict", cursive;
+  --font2: "Archivo Narrow", sans-serif;
+  @media (min-width: 800px);
+}
