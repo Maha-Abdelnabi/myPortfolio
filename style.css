@@ -130,6 +130,7 @@ left: 160px;
 .commerceserv{
   position: relative;
 left: 350px;  
+margin:35px;
 }
 .appserv{
     position: relative;
@@ -144,3 +145,11 @@ margin-top: 5px;
 font-size: 25px;
 padding-left: 20px;
 }  
+.webicon, .eicon, .appicon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  left: 90px;
+  top: 15px;
+}
