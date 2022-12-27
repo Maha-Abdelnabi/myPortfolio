@@ -90,10 +90,7 @@ img {
   z-index: 1;
 }
 
-.info-me{
-
-}
-.aboutme-title{
+.aboutme-title, .service-title{
     font-size: 40px;
     color:#65647C;
     margin:120px 20px 20px 100px;
@@ -113,3 +110,37 @@ img {
     color:aquamarine;
     font-size: 50px;
 }
+.webserv, .commerceserv, .appserv{
+    background-image: linear-gradient(var(--bgcolor), var(--xcolor));
+     display:flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    width: 500px;
+    height: 200px;
+    border-radius: 8px;
+ 
+  
+}
+.webserv{
+position: relative;
+left: 160px;
+}
+
+.commerceserv{
+  position: relative;
+left: 350px;  
+}
+.appserv{
+    position: relative;
+left: 550px;
+}
+.websites, .ecommerce, .webapp{
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+#para{
+margin-top: 5px;
+font-size: 25px;
+padding-left: 20px;
+}  
