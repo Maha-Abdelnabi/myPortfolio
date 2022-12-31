@@ -14,26 +14,27 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://icons8.com/icons">
+    <script src="https://kit.fontawesome.com/b77160aff0.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--logo and navigation menu-->
     <header>
       <div class="logo">
-        <p>Maha.</p>
+        <p>Maha. </p>
+   
+       <a><i class="fa-thin fa-flower"></i></a>
       </div>
       <nav class="bar">
         <ul class="list">
-          <li class="home"><a href="#">Home</a></li>
-          <li class="aboutMe"><a href="#">About me</a></li>
-         <!-- <li class="myServices"><a href="#">My services</a></li>-->
-          <li class="myWork"><a href="#">My work</a></li>
-          <li class="contact"><a href="#">Contact</a></li>
+          <li class="home" id="list-item"><a href="#" class="list-link">Home</a></li>
+          <li class="aboutMe" id="list-item"><a href="#" class="list-link">About me</a></li>
+          <li class="myWork" id="list-item"><a href="#" class="list-link">My work</a></li>
+          <li class="contact" id="list-item"><a href="#" class="list-link">Contact</a></li>
         </ul>
       </nav>
-      <img
-        src="https://www.wallpapertip.com/wmimgs/136-1369543_laptop-coding.jpg"
-        alt="labtop"
+      <img class="me"
+        src="./assets/imagesport/me4.jpg"
+        alt="maha pic"
       />
     </header>
     <div class="container">
@@ -47,7 +48,8 @@
     <!--about me-->
     <section class="info-me">
       <h2 class="aboutme-title">Who I am</h2>
-      <div class="line"></div>
+  
+     
       <p class="paragraph-me">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -56,33 +58,64 @@
         velit esse cillum dolore eu fugiat nulla pariatur.
       </p>
     </section>
-    <!--services
-    <section class="info-services">
-      <h2 class="service-title">My Services</h2>
-      <div class="webserv">
-        <h3 class="websites">Websites</h3>
-    <img src="./assets/imagesport/icons8-website-100.png" alt="web icon" class="webicon">
-        <p id="para">
-          Building websites have an easy-to-use page editor for dynamic content
-          management.
-        </p>
-      </div>
-      <div class="commerceserv">
-        <h3 class="ecommerce">Ecommerce</h3>
-        <img src="./assets/imagesport/icons8-ecommerce-64.png" alt="ecommerce icon" class="eicon">
-        <p id="para">
-          Integrate an ecommerce component into your operating web app or launch
-          a new ecommerce presence.
-        </p>
-      </div>
-      <div class="appserv">
-        <h3 class="webapp">Web apps</h3>
-        <img src="./assets/imagesport/icons8-application-64.png" alt="app icon" class="appicon">
-        <p id="para"> Building web apps for efficient management of different business activities.</p>
-      -->
-      
+    <!--work-->
+    <section class="info-work">
+      <h2 class="work-info">My Work</h2>
+     
+  
+      <div class="portfolio">
+        <!--item1-->
+        <a href="#" class="item"  id="item1" data-tooltip="Mobile Applications">
+      <img src="./assets/imagesport/recentworks1-628x437.jpg" alt="mobile phone" class="portimg">
+        </a>
+        <!--item2-->
+        <a href="#" class="item" id="item2" data-tooltip="Social website design">
+      <img src="./assets/imagesport/recentworks2-7-628x437.jpg" alt="people using their phones"class="portimg">
+        </a>
+        
+        <!--item3-->
+        <a href="#" class="item" id="item3" data-tooltip="Web development">
+      <img src="./assets/imagesport/recentworks4-644x448.jpg" alt="labtop"  class="portimg">
+        </a>
+       
+        <!--item4-->
+        <a href="#" class="item" id="item4" data-tooltip="Game developmet">
+      <img src="./assets/imagesport/th.jfif" alt="office"  class="portimg">
+        </a>
+       
+        <!--item5-->
+        <a href="#" class="item" id="item5" data-tooltip="Corporate website design">
+      <img src="./assets/imagesport/th (2).jfif" alt="labtop"  class="portimg">
+        </a>
+     
+        <!--item6-->
+        <a href="#" class="item" id="item6" data-tooltip="eCommerce website design">
+      <img src="./assets/imagesport/th (1).jfif" alt="labtop" class="portimg">
+        </a>
+       
       </div>
     </section>
+  
+   <h2 class="contact-info">Contact</h2>
+   
+<footer>
+  <!--contact-->
+<hr />
+<ul class="social-list">
+  <li class="socialitem">
+    <a href="https://gmail.com/" target="_blank" class="social-link"><i class="fa-regular fa-envelope"></i></a>
+  </li>
+  <li class="socialitem">
+    <a href="https://github.com/" target="_blank" class="social-link"><i class="fa-brands fa-github"></i></a>
+  </li>
+  <li class="socialitem">
+    <a href="https://facebook.com/" target="_blank" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+  </li>
+  <li class="socialitem">
+    <a href="https://instagram.com/" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+  </li>
+</ul>
+</footer>
     </div>
   </body>
 </html>
