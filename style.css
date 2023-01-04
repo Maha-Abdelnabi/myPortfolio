@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -10,10 +12,10 @@
   --zcolor: rgb(179, 176, 43);
   --logocolor: #c36767;
   --titlecolor: #e3e0dd;
-  --shadowcolor:rgb(81, 78, 78);
+  --shadowcolor: rgb(81, 78, 78);
   --bgimgcolor: linear-gradient(#cfd4d4, #eca869);
   --fontlogo: "Passions Conflict", cursive;
-  --font2:'Lato', sans-serif;
+  --font2: "Lato", sans-serif;
 }
 /*general style*/
 body {
@@ -23,26 +25,32 @@ body {
 
 /*styling the header*/
 header {
-  height: 150px;
+  height: 200px;
 }
 /*logo*/
 .logo {
   color: var(--xcolor);
   font-family: var(--fontlogo);
   font-size: 60px;
-  position: relative;
-  top: -60px;
+  /* position: relative;
+  top: -60px;*/
   color: var(--logocolor);
   font-style: oblique;
 }
 /*positioning the nav list*/
 .bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.25rem;
+  row-gap: 0.5rem;
   padding-top: 15px;
   margin-right: 20px;
   float: right;
   font-family: var(--font2);
   position: relative;
-  top: -200px;
+  top: -50px;
 }
 /*list decoration*/
 .list {
@@ -102,12 +110,14 @@ li {
   margin-left: 250px;
   margin-bottom: 100px;
   border-radius: 8px;
-
 }
 /*my name box*/
 .title {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
-  left: 540px;
+  left: 500px;
+  top: 20px;
   font-size: 30px;
   background-color: var(--bgcolor);
   color: var(--titlecolor);
@@ -118,21 +128,25 @@ li {
 }
 /*web developer box*/
 .info {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 110px;
+  top: 20px;
   background-color: var(--ycolor);
   color: var(--titlecolor);
-  margin: 10px 220px 10px 50px;
-  padding: 0px 25px 10px 530px;
-  width: 750px;
+  padding: 10px 25px 10px 440px;
+  width: 700px;
   border-radius: 8px;
-  font-size: 30px;
+  font-size: 25px;
 }
 /*my image*/
 .me {
   display: inline-block;
-  height: 350px;
-  width: 350px;
+  height: 320px;
+  width: 320px;
   position: relative;
-  top: -50px;
+  top: 30px;
   left: 450px;
   box-shadow: 15px 15px 30px var(--shadowcolor);
   margin-bottom: 50px;
@@ -143,11 +157,14 @@ li {
 .aboutme-title,
 .work-info,
 .contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-size: 40px;
   color: var(--ycolor);
   position: relative;
   right: 200px;
-  top: 130px;
+  top: 100px;
   margin-right: 520px;
 }
 /*styling underlines the titles*/
@@ -170,23 +187,23 @@ li {
   width: 30%;
   left: 0;
   background-color: var(--xcolor);
-  transition: 0.20ms ease-in-out;
+  transition: 0.2ms ease-in-out;
 }
 /*who I'm paragraph*/
 .paragraph-me {
   text-align: left;
   display: inline-block;
-  font-size:25px;
+  font-size: 25px;
   margin: 50px 100px 0px 50px;
   line-height: 40px;
   text-indent: 45px;
-  color:var(--bgcolor);
+  color: var(--bgcolor);
 }
 /*styling the first letter of the pragraph*/
 .paragraph-me::first-letter {
-  color:var(--bgcolor);
+  color: var(--bgcolor);
   font-size: 40px;
-  font-family:serif;
+  font-family: serif;
 }
 /*images link to my work*/
 .portfolio {
@@ -249,29 +266,29 @@ li {
 }
 #item3::before,
 #item3::after {
-left: 102%;
+  left: 102%;
 }
 
 #item4::before,
-#item4::after{
+#item4::after {
   left: 52%;
 }
 #item5::before,
-#item5::after{
+#item5::after {
   left: 83%;
 }
 
 #item6::before,
-#item6::after{
- left: 110%;}
-
-
+#item6::after {
+  left: 110%;
+}
 
 /*tooltop top 3 images*/
 #item1::before,
 #item1::after,
 #item2::before,
-#item2::after, #item3::before,
+#item2::after,
+#item3::before,
 #item3::after {
   --scale: 0;
   position: absolute;
@@ -283,8 +300,10 @@ left: 102%;
 
 /*tooltip bottom 3 images*/
 #item4::before,
-#item4::after, #item5::before,
-#item5::after, #item6::before,
+#item4::after,
+#item5::before,
+#item5::after,
+#item6::before,
 #item6::after {
   --scale: 0;
   position: absolute;
@@ -314,7 +333,11 @@ footer {
 /*icons activity after pressing*/
 .fa-regular:active,
 .fa-brands:active {
-  color:var(--logocolor);
+  color: var(--logocolor);
 }
 
-
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #c36767;
+  }
+}
