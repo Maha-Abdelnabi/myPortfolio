@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
+    <!--links for fonts-->
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Passions+Conflict&display=swap"
       rel="stylesheet"
@@ -14,110 +15,173 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/b77160aff0.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!--link for icons-->
+    <script
+      src="https://kit.fontawesome.com/b77160aff0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!--logo and navigation menu-->
     <header>
       <div class="logo">
-        <p>Maha. </p>
-   
-       <a><i class="fa-thin fa-flower"></i></a>
+        <p>Maha.</p>
       </div>
       <nav class="bar">
         <ul class="list">
-          
-          <li class="aboutMe" id="list-item"><a href="#about" class="list-link">About me</a></li>
-          <li class="myWork" id="list-item"><a href="#work" class="list-link">My work</a></li>
-          <li class="contact" id="list-item"><a href="#contact" class="list-link">Contact</a></li>
+          <li class="aboutMe" id="list-item">
+            <a href="#about" class="list-link">About me</a>
+          </li>
+          <li class="myWork" id="list-item">
+            <a href="#work" class="list-link">My work</a>
+          </li>
+          <li class="contact" id="list-item">
+            <a href="#contact" class="list-link">Contact</a>
+          </li>
         </ul>
       </nav>
-      <img class="me"
-        src="./assets/imagesport/me4.jpg"
-        alt="maha pic"
-      />
+      <!--my image-->
+      <img class="me" src="./assets/imagesport/me4.jpg" alt="maha pic" />
     </header>
     <div class="container">
-    <!--introduction-->
+      <!--name and occupation-->
 
-    <section class="intro">
-      <h1 class="title">Maha Abdelnabi</h1>
-      <h2 class="info">Web Developer</h2>
-    </section>
+      <section class="intro">
+        <h1 class="title">Maha Abdelnabi</h1>
+        <h2 class="info">Web Developer</h2>
+      </section>
 
-    <!--about me-->
-    <section class="info-me">
-      <h2 class="aboutme-title" id="about">Who I am</h2>
-  
-     
-      <p class="paragraph-me">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur.
-      </p>
-    </section>
-    <!--work-->
-    <section class="info-work">
-      <h2 class="work-info" id="work">My Work</h2>
-     
-  
-      <div class="portfolio">
-        <!--item1-->
-        <a href="#" class="item"  id="item1" data-tooltip="Mobile Applications">
-      <img src="./assets/imagesport/recentworks1-628x437.jpg" alt="mobile phone" class="portimg">
-        </a>
-        <!--item2-->
-        <a href="#" class="item" id="item2" data-tooltip="Social website design">
-      <img src="./assets/imagesport/recentworks2-7-628x437.jpg" alt="people using their phones"class="portimg">
-        </a>
-        
-        <!--item3-->
-        <a href="#" class="item" id="item3" data-tooltip="Web development">
-      <img src="./assets/imagesport/recentworks4-644x448.jpg" alt="labtop"  class="portimg">
-        </a>
-       
-        <!--item4-->
-        <a href="#" class="item" id="item4" data-tooltip="Game developmet">
-      <img src="./assets/imagesport/th.jfif" alt="office"  class="portimg">
-        </a>
-       
-        <!--item5-->
-        <a href="#" class="item" id="item5" data-tooltip="Corporate website design">
-      <img src="./assets/imagesport/th (2).jfif" alt="labtop"  class="portimg">
-        </a>
-     
-        <!--item6-->
-        <a href="#" class="item" id="item6" data-tooltip="eCommerce website design">
-      <img src="./assets/imagesport/th (1).jfif" alt="labtop" class="portimg">
-        </a>
-       
+      <!--about me title-->
+      <section class="info-me">
+        <h2 class="aboutme-title" id="about">Who I am</h2>
+        <!--about me paragraph-->
+        <p class="paragraph-me">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+      </section>
+      <!--work-->
+      <section class="info-work">
+        <h2 class="work-info" id="work">My Work</h2>
+
+        <!--images and links for my work-->
+        <div class="portfolio">
+          <!--item1..1st img..top left-->
+          <a
+            href="#"
+            class="item"
+            id="item1"
+            data-tooltip="Mobile Applications"
+          >
+            <img
+              src="./assets/imagesport/recentworks1-628x437.jpg"
+              alt="mobile phone"
+              class="portimg"
+            />
+          </a>
+          <!--item2..2nd img..top middle-->
+          <a
+            href="#"
+            class="item"
+            id="item2"
+            data-tooltip="Social website design"
+          >
+            <img
+              src="./assets/imagesport/recentworks2-7-628x437.jpg"
+              alt="people using their phones"
+              class="portimg"
+            />
+          </a>
+
+          <!--item3..3rd img..top right-->
+          <a href="#" class="item" id="item3" data-tooltip="Web development">
+            <img
+              src="./assets/imagesport/recentworks4-644x448.jpg"
+              alt="labtop"
+              class="portimg"
+            />
+          </a>
+
+          <!--item4..4th img..bottom left-->
+          <a href="#" class="item" id="item4" data-tooltip="Game developmet">
+            <img
+              src="./assets/imagesport/th.jfif"
+              alt="office"
+              class="portimg"
+            />
+          </a>
+
+          <!--item5..5th img..bottom middle-->
+          <a
+            href="#"
+            class="item"
+            id="item5"
+            data-tooltip="Corporate website design"
+          >
+            <img
+              src="./assets/imagesport/th (2).jfif"
+              alt="labtop"
+              class="portimg"
+            />
+          </a>
+
+          <!--item6..6th img..bottom right-->
+          <a
+            href="#"
+            class="item"
+            id="item6"
+            data-tooltip="eCommerce website design"
+          >
+            <img
+              src="./assets/imagesport/th (1).jfif"
+              alt="labtop"
+              class="portimg"
+            />
+          </a>
+        </div>
+      </section>
+      <!--contact title-->
+      <div>
+        <h2 class="contact-info" id="contact">Contact</h2>
       </div>
-    </section>
-  
-   <h2 class="contact-info" id="contact">Contact</h2>
-   
-<footer>
-  <!--contact-->
-<hr />
-<ul class="social-list">
-  <li class="socialitem">
-    <a href="https://gmail.com/" target="_blank" class="social-link"><i class="fa-regular fa-envelope"></i></a>
-  </li>
-  <li class="socialitem">
-    <a href="https://github.com/" target="_blank" class="social-link"><i class="fa-brands fa-github"></i></a>
-  </li>
-  <li class="socialitem">
-    <a href="https://facebook.com/" target="_blank" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-  </li>
-  <li class="socialitem">
-    <a href="https://instagram.com/" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-  </li>
-</ul>
-</footer>
+      <footer>
+        <!--contact icon links-->
+        <hr />
+        <ul class="social-list">
+          <!--gmail icon-->
+          <li class="socialitem">
+            <a href="https://gmail.com/" target="_blank" class="social-link"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+          </li>
+          <!--github icon-->
+          <li class="socialitem">
+            <a href="https://github.com/" target="_blank" class="social-link"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <!--facebook icon-->
+          <li class="socialitem">
+            <a href="https://facebook.com/" target="_blank" class="social-link"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <!--instagram icon-->
+          <li class="socialitem">
+            <a href="https://instagram.com/" target="_blank" class="social-link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
