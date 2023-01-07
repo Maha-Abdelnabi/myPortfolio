@@ -342,10 +342,12 @@ footer {
   body {
     background-color: var(--titlecolor);
   }
+  /*work images*/
   .grid {
     --num-cols: 2;
     --row-height: 200px;
   }
+  /*nav bar list*/
   li {
     display: inline-flex;
     margin-top: 20px;
@@ -353,10 +355,11 @@ footer {
     left: -10%;
     font-size: 25px;
   }
+  /*the orange background*/
   .container {
     background-image: none;
   }
-
+/*my name*/
   .title {
     display: flex;
     flex-wrap: wrap;
@@ -386,6 +389,7 @@ footer {
     border-radius: 40%;
     z-index: 1;
   }
+  /*side bar titles*/
   .aboutme-title,
   .work-info,
   .contact-info {
@@ -399,6 +403,7 @@ footer {
     top: 140px;
     margin-right: 100px;
   }
+  /*icons*/
   .fa-regular,
   .fa-brands {
     color: var(--bgcolor);
